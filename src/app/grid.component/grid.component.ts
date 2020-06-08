@@ -5,10 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './grid.component.html',
   styleUrls: ['./grid.component.css']
 })
+
 export class GridComponent implements OnInit {
 
   columnDefs = [
-    {field: 'make' },
+    {field: 'Column' },
     {field: 'model' },
     {field: 'price'}
 ];
@@ -19,7 +20,20 @@ rowData = [
     { make: 'Porsche', model: 'Boxter', price: 72000 }
 ];
 
-  constructor() { }
+  constructor() { 
+    var arry1:String[];
+    arry1 = ["O", "O", "O", "O", "O", "O", "O"];
+    var cellNum:number;
+    // this.columnDefs = arry1;
+    // this.rowData = arry1;
+    
+    var i:number = 0;
+    function checkFields(){
+      for (i; i < cellNum; i++){
+
+      }
+    }
+  }
 
   ngOnInit(): void {
   }
